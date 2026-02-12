@@ -1,6 +1,8 @@
 name: build-sunxi-cortexa53-23.05.4-ImmpotalWrt
 
 on:
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       profile:
