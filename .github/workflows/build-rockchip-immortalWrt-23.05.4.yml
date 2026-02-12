@@ -1,6 +1,8 @@
 name: build-rockchip-immortalWrt-23.05.4
 
 on:
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       profile:
