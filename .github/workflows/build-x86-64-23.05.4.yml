@@ -1,6 +1,8 @@
 name: build-x86-64-immortalwrt-23.05.4
 
 on:
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       custom_router_ip:
