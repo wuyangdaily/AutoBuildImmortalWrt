@@ -1,6 +1,8 @@
 name: build-x86-64-immortalwrt-24.10.x
 
 on:
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       luci_version:
