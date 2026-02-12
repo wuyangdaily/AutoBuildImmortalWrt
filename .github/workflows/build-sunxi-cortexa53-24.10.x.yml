@@ -1,6 +1,8 @@
 name: build-sunxi-cortexa53-24.10.x
 
 on:
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       profile:
