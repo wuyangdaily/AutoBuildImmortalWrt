@@ -1,6 +1,8 @@
 name: build-RaspBerryPi-23.05.4-ImmortalWrt
 
 on:
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
       profile:
